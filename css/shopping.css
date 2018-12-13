@@ -1,0 +1,122 @@
+#overbody {
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.7;
+	z-index: 2000;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#shoping {
+	visibility: hidden;
+	width: 410px;
+	height: 100%;
+	background: #333;
+	z-index: 2010;
+	position: fixed;
+	top: 0;
+	right: -410px;
+	box-sizing: border-box;
+	padding: 0 40px;
+}
+
+#shoping .p1 {
+	height: 82px;
+	border-bottom: 1px solid #464646;
+}
+
+#shoping .p1 a {
+	font-size: 16px;
+	color: #eee;
+	float: right;
+	line-height: 82px;
+}
+
+#shoping ul {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#shoping ul h1 {
+	font-weight: 100;
+	color: #fff;
+	line-height: 100px;
+}
+
+#shoping ul::-webkit-scrollbar {
+	display: none;
+}
+
+#shoping ul li {
+	background-position: left;
+	height: 82px;
+	border-bottom: 1px solid #464646;
+	background-size: 58px 58px;
+	box-sizing: border-box;
+	padding-left: 68px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+
+/*#shoping ul li:nth-child(1){
+	background-image: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop02.png);
+}*/
+
+#shoping ul li p {
+	font-size: 16px;
+	color: #eee;
+}
+
+#shoping ul li p:nth-child(1) {
+	margin-top: 7px;
+}
+
+#shoping ul li p:nth-child(1) a {
+	float: right;
+	font-size: 25px;
+	margin-top: -5px;
+}
+
+#shoping ul li p:nth-child(1) a:hover {
+	color: #fff;
+}
+
+#shoping ul li p:nth-child(3) input {
+	border: 0;
+	background: #333;
+	color: #fff;
+	width: 50px;
+}
+
+#shoping ul li p:nth-child(3) span {
+	float: right;
+}
+
+#shoping .p2 {
+	height: 54px;
+	border-bottom: 1px solid #464646;
+	border-top: 1px solid #464646;
+	font-size: 16px;
+	color: #eee;
+	line-height: 54px;
+	position: absolute;
+	bottom: 120px;
+	width: 330px;
+}
+
+#shoping .jiesuan {
+	background: #181818;
+	display: block;
+	position: absolute;
+	height: 50px;
+	width: 330px;
+	bottom: 50px;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+}

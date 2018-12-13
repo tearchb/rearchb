@@ -1,0 +1,125 @@
+#content h1 {
+	line-height: 100px;
+	font-size: 20px;
+	padding-left: 20px;
+	font-weight: 100;
+}
+
+#content ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#content ul li {
+	box-sizing: border-box;
+	width: 33.3%;
+	padding: 0 15px;
+	margin-bottom: 40px;
+}
+
+#content ul li .lbbg {
+	display: block;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+}
+
+#content ul li .lbbg span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #000000;
+	opacity: .6;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#content ul li .lbbg:hover span {
+	display: block;
+}
+
+#content ul li:nth-child(1) .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb01.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+#content ul li:nth-child(2) .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb02.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+#content ul li:nth-child(3) .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb03.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+#content ul li:nth-child(4) .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb04.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+#content ul li:nth-child(5) .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb05.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+#content ul li:nth-child(6) .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb06.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+#content ul li:nth-child(7) .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb07.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+#content ul li:nth-child(8) .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb08.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+#content ul li:nth-child(9) .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb09.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+#content ul li div {
+	line-height: 2;
+	margin: 16px 0 8px;
+	position: relative;
+	font-size: 14px;
+	color: #a0a0a0;
+	padding-left: 51px;
+	height: 28px;
+}
+
+#content ul li div span {
+	width: 37px;
+	height: 1px;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	display: block;
+	content: " ";
+	background: #dadada;
+}
+
+#content ul li h3 {
+	height: 28px;
+	color: #282828;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 28px;
+}
+
+#content ul li p {
+	margin-top: 7px;
+	line-height: 28px;
+	color: #909090;
+	font-size: 14px;
+}
+
+@media only screen and (max-width:970px) {
+	#content ul li {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width:650px) {
+	#content ul li {
+		width: 100%;
+	}
+}

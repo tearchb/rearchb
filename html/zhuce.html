@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="../image/MIIMOO_米墨_-_趣味生活杂货_–/logo@2x.png" /></a>
+			<a href="register.html">登录</a>
+		</header>
+		<form id="content">
+			<h3>注册</h3>
+			<p class="text">
+				<label>用户名</label><br />
+				<input type="text" name="user" id="cookname" />
+				<span></span>
+			</p>
+			<p class="text">
+				<label>密码</label><br />
+				<input type="password" name="pwd" id="cookpwd" />
+			</p>
+			<input type="button" value="注册" id="denglu" /><br />
+			<div class="form-sep sep-down">
+				<span></span>
+				<span>或</span>
+			</div>
+			<a href="register.html" id="zhuce">登录</a>
+		</form>
+	</body>
+
+</html>
+<script src="../js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('#denglu').click(function() {
+		let user = $('#cookname').val();
+		let pwd = $('#cookpwd').val();
+		if(user == '' || pwd == '') {
+			alert('用户名密码不能为空');
+			return false;
+		} else {
+			$.post('../php/zhuce.php', {
+				'user': user,
+				'pwd': pwd
+			}, function(data) {
+				//				alert(typeof data);
+				if(parseInt(data) > 0) {
+					alert('用户名已被注册');
+				} else {
+					alert('注册成功');
+					window.location.href = 'register.html';
+				}
+			});
+		}
+	});
+	$('#cookname').blur(function() {
+		//		alert($(this).val());
+		let user = $(this).val();
+		$.get('../php/checking.php', {
+			'user': user
+		}, function(data) {
+			//			console.log(data);
+			if(parseInt(data) > 0) {
+				//				console.log('用户名已注册');
+				$('#cookname').next().html('用户名已注册');
+				$('#cookname').next().css('color', 'red');
+			} else {
+				//				console.log('可以注册');
+				$('#cookname').next().html('可以注册');
+				$('#cookname').next().css('color', 'green');
+			}
+		});
+	});
+</script>

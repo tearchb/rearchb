@@ -1,0 +1,181 @@
+header {
+	height: 80px;
+	line-height: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	position: relative;
+	box-sizing: border-box;
+	background: #F5F5F5;
+}
+
+header img {
+	display: block;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -15px;
+	margin-left: -70px;
+}
+
+header a:nth-child(2) {
+	position: absolute;
+	right: 115px;
+	font-size: 16px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e0e0e0;
+	color: #008800;
+	line-height: 1;
+}
+
+form {
+	width: 100%;
+}
+
+form h3 {
+	text-align: center;
+	font-size: 28px;
+	line-height: 1.2;
+	margin-bottom: 36px;
+	font-weight: 100;
+	margin-top: 50px;
+}
+
+#weixin {
+	width: 500px;
+	height: 50px;
+	background: #008800;
+	display: block;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.QR {
+	width: 172px;
+	height: 172px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	display: none;
+}
+
+.QR p {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.form-sep {
+	width: 500px;
+	height: 28px;
+	margin: 23px auto 26px;
+	position: relative;
+}
+
+.form-sep span:nth-child(2) {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	padding: 0 20px;
+	margin-top: -9px;
+	font-size: 18px;
+	background: #fff;
+	margin-left: -117px;
+}
+
+.sep-down span:nth-child(2) {
+	margin-left: -29px;
+}
+
+.form-sep span:nth-child(1) {
+	height: 1px;
+	width: 100%;
+	background: #ccc;
+	position: absolute;
+	top: 50%;
+}
+
+.text {
+	height: 80px;
+	width: 500px;
+	margin: 10px auto 25px;
+}
+
+.text label {
+	font-size: 16px;
+	color: #111;
+	padding-bottom: 3px
+}
+
+.text input {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #e7e7e7;
+	margin-top: 15px;
+}
+
+#denglu {
+	width: 500px;
+	height: 50px;
+	background: #181818;
+	display: block;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	border: 0;
+}
+
+#zhuce {
+	width: 500px;
+	height: 50px;
+	background: #fff;
+	display: block;
+	color: #008800;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	border: 1px solid #ccc;
+	margin-bottom: 100px;
+}
+
+#p3 {
+	width: 500px;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+#p3 a {
+	float: right;
+	color: #008800;
+}
+
+@media screen and (max-width:560px) {
+	header a:nth-child(2) {
+		display: none;
+	}
+	#weixin {
+		width: 90%;
+	}
+	.form-sep {
+		width: 90%;
+	}
+	.text {
+		width: 90%;
+	}
+	#denglu {
+		width: 90%;
+	}
+	#p3 {
+		width: 90%;
+	}
+	#zhuce {
+		width: 90%;
+	}
+}

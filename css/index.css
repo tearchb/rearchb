@@ -1,0 +1,413 @@
+/*----------------------轮播图---------------------------*/
+
+.swiper-container {
+	width: 95%;
+}
+
+.swiper-container::-webkit-scrollbar {
+	display: none;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .lbbg {
+	display: block;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .lbbg span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #000000;
+	opacity: .6;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .lbbg:hover span {
+	display: block;
+}
+
+.swiper-container .swiper-wrapper .bg1 .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb01.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+.swiper-container .swiper-wrapper .bg2 .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb02.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+.swiper-container .swiper-wrapper .bg3 .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb03.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+.swiper-container .swiper-wrapper .bg4 .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb04.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+.swiper-container .swiper-wrapper .bg5 .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb05.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+.swiper-container .swiper-wrapper .bg6 .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb06.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+.swiper-container .swiper-wrapper .bg7 .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb07.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+.swiper-container .swiper-wrapper .bg8 .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb08.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+.swiper-container .swiper-wrapper .bg9 .lbbg {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/Lb09.jpg ) no-repeat 0 0 / 100% 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide div {
+	line-height: 2;
+	margin: 16px 0 8px;
+	position: relative;
+	font-size: 14px;
+	color: #a0a0a0;
+	padding-left: 51px;
+	height: 28px;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide div span {
+	width: 37px;
+	height: 1px;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	display: block;
+	content: " ";
+	background: #dadada;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide h3 {
+	height: 28px;
+	color: #282828;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 28px;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide p {
+	margin-top: 7px;
+	line-height: 28px;
+	color: #909090;
+	font-size: 14px;
+}
+
+.swiper-container .swiper-pagination {
+	position: absolute;
+	bottom: 0;
+}
+
+
+/*---------------------------------------*/
+
+.separator_align_center {
+	width: 100%;
+	height: 35px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.separator_align_center div {
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 10;
+	display: block;
+	content: " ";
+	background: #eee;
+	text-align: center;
+}
+
+.separator_align_center h3 {
+	position: absolute;
+	padding-left: 14px;
+	padding-right: 14px;
+	position: relative;
+	z-index: 100;
+	display: inline-block;
+	font-size: 22px;
+	background: #fff;
+	font-style: normal;
+	font-weight: normal;
+	color: #282828;
+	left: 50%;
+	margin-left: -36px;
+}
+
+.col {
+	height: 140px;
+	box-sizing: border-box;
+	padding-top: 60px;
+}
+
+.col ul li a {
+	margin: 0 12px;
+	padding: 4px 0px;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.col ul li a:hover {
+	color: #000000;
+}
+
+.col ul li a:active {
+	color: #008800;
+	border-bottom: 1px solid #008800;
+}
+
+.col ul li a:focus {
+	color: #008800;
+	border-bottom: 1px solid #008800;
+}
+
+.col ul li span {
+	font-size: 16px;
+}
+
+.block-grid-4 {
+	display: none;
+}
+
+.block-grid-4>li {
+	width: 25%;
+	box-sizing: border-box;
+	padding: 15px;
+	padding-top: 28px;
+}
+
+.block-grid-4>li:nth-child(1) p,
+.block-grid-4>li:nth-child(2) p,
+.block-grid-4>li:nth-child(3) p {
+	line-height: 1.6;
+	margin-bottom: 8px;
+}
+
+.block-grid-4 li h3 {
+	font-size: 16px;
+	margin-bottom: 16px;
+	font-style: normal;
+	font-weight: normal;
+	color: #282828;
+}
+
+.block-grid-4>li:nth-child(1) ul a,
+.block-grid-4>li:nth-child(2) ul a,
+.block-grid-4>li:nth-child(3) ul a {
+	color: #777;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.block-grid-4>li:nth-child(1) a:hover {
+	color: #008800;
+}
+
+.block-grid-4>li:nth-child(2) a:hover {
+	color: #008800;
+}
+
+.block-grid-4>li:nth-child(3) a:hover {
+	color: #008800;
+}
+
+.block-grid-4>li:nth-child(4) ul a {
+	display: inline-block;
+	float: left;
+	padding: 5px 10px;
+	background: #282828;
+	color: #fff;
+	margin: 0 6px 6px 0;
+	border-radius: 30px;
+}
+
+.block-grid-4>li:nth-child(4) ul a:hover {
+	background: #008800;
+}
+
+@media screen and (min-width:980px) {
+	.block-grid-4 li h3 a {
+		pointer-events: none;
+	}
+	.col .right-menu li:nth-child(1) {
+		display: none;
+	}
+}
+
+@media screen and (max-width:980px) {
+	.block-grid-4>li ul {
+		display: none;
+	}
+	.block-grid-4>li {
+		width: 100%;
+		padding: 0;
+		padding-left: 15px;
+		margin: 0;
+	}
+	.block-grid-4>li h3 {
+		height: 50px;
+		border-bottom: 1px solid #ccc;
+		line-height: 50px;
+	}
+	.block-grid-4 li h3 a {
+		font-size: 20px;
+	}
+	.col .left-menu li a {
+		font-size: 16px;
+	}
+	.col .left-menu {
+		font-size: 16px;
+		margin-top: 30px;
+		display: none;
+	}
+	.col .right-menu {
+		width: 100%;
+	}
+	.col .right-menu li:nth-child(3) {
+		float: right;
+	}
+	.col ul li span {
+		display: none;
+	}
+}
+
+.search-inner input {
+	box-sizing: border-box;
+	font-size: 26px;
+	width: 100%;
+	padding: 0 30px 0 12px;
+	border: 0 none;
+	color: #d0d0d0;
+}
+
+.shop-show {
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.shop-show li {
+	width: 25%;
+	box-sizing: border-box;
+	padding: 10px;
+	padding-bottom: 20px;
+}
+
+.shop-show li .shop {
+	display: block;
+	position: relative;
+}
+
+.shop-show li:nth-child(1) .shop {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop01.png) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li:nth-child(2) .shop {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop02.png) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li:nth-child(3) .shop {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop03.png) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li:nth-child(4) .shop {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop04.jpg) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li:nth-child(5) .shop {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop05.jpg) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li:nth-child(6) .shop {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop06.jpg) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li .shop span {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.shop-show li .shop:hover span {
+	display: block;
+}
+
+.shop-show li:nth-child(1) .shop span {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop11.png) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li:nth-child(2) .shop span {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop12.png) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li:nth-child(3) .shop span {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop13.jpg) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li:nth-child(4) .shop span {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop14.jpg) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li:nth-child(6) .shop span {
+	background: url(../image/MIIMOO_米墨_-_趣味生活杂货_–/shop16.jpg) no-repeat 0 0 / 100% 100%;
+}
+
+.shop-show li p {
+	position: relative;
+	font-size: 15px;
+	line-height: 1.4;
+	margin-top: 15px;
+	padding-right: 32px;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+
+.shop-show li p a {
+	position: absolute;
+	border-width: 10px 10px 0 10px;
+	border-color: #ccc #fff;
+	border-style: solid;
+	right: 0;
+	top: 6px;
+}
+
+.shop-show li .genduo {
+	display: block;
+	width: 90px;
+	font-size: 14px;
+	color: #282828;
+}
+
+@media screen and (max-width:980px) {
+	.shop-show li {
+		width: 33.3%;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.shop-show li {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:515px) {
+	.shop-show li {
+		width: 100%;
+	}
+}

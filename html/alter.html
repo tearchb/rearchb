@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<style>
+			header {
+				height: 80px;
+				line-height: 50px;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				position: relative;
+				box-sizing: border-box;
+				background: #F5F5F5;
+			}
+			
+			header img {
+				display: block;
+				height: 30px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -15px;
+				margin-left: -70px;
+			}
+			
+			header a:nth-child(2) {
+				position: absolute;
+				right: 115px;
+				font-size: 16px;
+				padding-bottom: 5px;
+				border-bottom: 1px solid #e0e0e0;
+				color: #008800;
+				line-height: 1;
+			}
+			
+			form {
+				width: 500px;
+				margin: 0 auto;
+				margin-top: 80px;
+			}
+			
+			h1 {
+				font-weight: 100;
+				font-size: 28px;
+			}
+			
+			p {
+				line-height: 40px;
+				margin-bottom: 40px;
+				font-size: 16px;
+				color: #777;
+			}
+			
+			.text {
+				height: 80px;
+				width: 500px;
+				margin: 10px auto 25px;
+			}
+			
+			.text label {
+				font-size: 16px;
+				color: #111;
+				padding-bottom: 3px
+			}
+			
+			.text input {
+				box-sizing: border-box;
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #e7e7e7;
+				margin-top: 15px;
+			}
+			
+			.reset {
+				display: block;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				color: #fff;
+				background: #000;
+				font-size: 16px;
+			}
+			
+			.find {
+				display: block;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				color: #fff;
+				background: #000;
+				font-size: 16px;
+			}
+			
+			.resettxt {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="../image/MIIMOO_米墨_-_趣味生活杂货_–/logo@2x.png" /></a>
+			<a href="register.html">登录</a>
+		</header>
+		</header>
+		<form>
+			<h1>忘记密码？</h1>
+			<p>请输入您的用户名和重置密码您将会重新设置您的密码</p>
+			<p class="text">
+				<label>用户名</label><br />
+				<input type="text" class="name" />
+			</p>
+			<a href="##" class="find">找回密码</a>
+			<p class="text">
+				<label>您的密码</label><br />
+				<input type="text" class="pwd" />
+			</p>
+			<p class="text resettxt" style="height: 150px;">
+				<label>重置密码</label><br />
+				<input type="password" class="newpwd" />
+				<a href="##" class="reset" style="margin-top: 20px;">重置密码</a>
+			</p>
+		</form>
+	</body>
+
+</html>
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	$('.reset').click(function() {
+		let user = $('.name').val();
+		let pwd = $('.newpwd').val();
+		$.get('../php/alter.php', {
+			'user': user,
+			'pwd': pwd
+		}, function(date) {
+			if(parseInt(date) == 1) {
+				alert('重置成功');
+				window.location.href = 'register.html';
+			}
+		});
+	});
+	$('.find').click(function() {
+		let user = $('.name').val();
+		$.get('../php/nameslist.php', {
+			'name': user
+		}, function(date) {
+			if(parseInt(date) == 0) {
+				alert('用户名不存在');
+				$('.pwd').val('');
+			} else {
+				$('.pwd').val(date);
+				setTimeout(function() {
+					if($('.pwd').val() != '') {
+						if(confirm('是否重置密码')) {
+							$('.resettxt').css('display', 'block');
+						}
+					}
+				}, 500)
+			}
+		});
+	});
+</script>

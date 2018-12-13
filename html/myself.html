@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的账户</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/shopping.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="w nav">
+				<ul class="l">
+					<li class="l">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="l">
+						<a href="news.html">趣文</a>
+					</li>
+					<li class="l">
+						<a href="index.html#shop">杂货</a>
+					</li>
+					<li class="l">
+						<a href="##">淘宝店</a>
+					</li>
+					<li class="l">
+						<a href="##">天猫店</a>
+					</li>
+				</ul>
+				<a href="##" class="l" id="san"><img src="../image/icon.png" /></a>
+				<a href="index.html"><img id="login" src="../image/MIIMOO_米墨_-_趣味生活杂货_–/logo@2x.png" /></a>
+				<ul class="r">
+					<li class="r">
+						<a href="##" class="gouwu">购物车</a>
+					</li>
+					<li class="r">
+						<a href="##" class="denglu">登录</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<ul class="ynav w">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+				<a href="news.html">趣文</a>
+			</li>
+			<li>
+				<a href="index.html#shop">杂货</a>
+			</li>
+			<li>
+				<a href="##">天猫店</a>
+			</li>
+			<li>
+				<a href="##">淘宝店</a>
+			</li>
+			<li style="border-bottom: 0px;">
+				<a href="##" class="denglu">登录</a>
+			</li>
+		</ul>
+		<h3 style="text-align: center;font-weight: 100;font-size: 26px;line-height: 100px;">hello</h3>
+		<p style="text-align: center;font-size: 16px;margin-top: 10px;margin-bottom: 40px;">
+			<a href="##" id="zhuxiao" style="color: #008800;">注销</a>
+		</p>
+		<footer class="t">
+			<ul class="w">
+				<li>
+					<p>使用微信扫一扫或在微信内长按识别，关注米墨</p>
+					<img src="../image/MIIMOO_米墨_-_趣味生活杂货_–/miimoo-weixin-code.gif" />
+				</li>
+				<li>
+					<p>微信客服：miimoolife </p>
+					<p>© MIIMOo 米墨 2004-2018. All Rights Reserved.</p>
+					<p>沪ICP备1201488号</p>
+				</li>
+			</ul>
+			<div id="footer-nav">
+				<ul class="w">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="news.html">趣文</a>
+					</li>
+					<li>
+						<a href="index.html#shop">杂货</a>
+					</li>
+					<li>
+						<a href="">天猫店</a>
+					</li>
+					<li>
+						<a href="">淘宝店</a>
+					</li>
+				</ul>
+				<a href="##" id="go-top">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</footer>
+		<div id="overbody"></div>
+		<div id="shoping">
+			<p class="p1">
+				<a href="##">关闭</a>
+			</p>
+			<ul>
+				<h1>您的购物车目前是空的</h1>
+			</ul>
+			<p class="p2" style="background-color: #333333;">
+				<span>小计</span>
+				<span class="r">5.0</span><span class="r">¥&nbsp;</span>
+			</p>
+			<a href="##" class="jiesuan">结算</a>
+		</div>
+	</body>
+
+</html>
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/shopping.js"></script>
+<script type="text/javascript">
+	$('h3').html('Hello ' + getCookie('user'));
+	$('#zhuxiao').click(function() {
+		removeCookie('user');
+		window.location.href = "register.html";
+	})
+</script>

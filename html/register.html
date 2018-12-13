@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="../image/MIIMOO_米墨_-_趣味生活杂货_–/logo@2x.png" /></a>
+			<a href="zhuce.html">注册</a>
+		</header>
+		<form id="content">
+			<h3>登录</h3>
+			<a href="##" id="weixin">微信登录</a>
+			<div class="QR">
+				<img src="../image/winxinQR.jpg" />
+				<p>欢迎使用二维码登录</p>
+			</div>
+			<div class="form-sep">
+				<span></span>
+				<span>或使用以下注册登录方式</span>
+			</div>
+			<p class="text">
+				<label>用户名</label><br />
+				<input type="text" id="cookname" />
+			</p>
+			<p class="text">
+				<label>密码</label><br />
+				<input type="password" id="cookpwd" />
+			</p>
+			<input type="button" value="登录" id="denglu" style="cursor: pointer;" /><br />
+			<p id="p3">
+				<input type="checkbox" /> 记住我
+				<a href="alter.html">忘记密码？</a>
+			</p>
+			<div class="form-sep sep-down">
+				<span></span>
+				<span>或</span>
+			</div>
+			<a href="zhuce.html" id="zhuce">注册</a>
+		</form>
+	</body>
+
+</html>
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/public.js"></script>
+<script type="text/javascript">
+	$('#weixin').click(function() {
+		$(this).css('display', 'none');
+		$('.QR').css('display', 'block');
+	});
+	$('#denglu').click(function() {
+		let user = $('#cookname').val();
+		let pwd = $('#cookpwd').val();
+		if(user == '' || pwd == '') {
+			alert("用户名密码不能为空");
+			return false;
+		} else {
+			$.get('../php/register.php', {
+				'user': user,
+				'pwd': pwd
+			}, function(data) {
+				if(data == 1) {
+					if($("input[type='checkbox']").is(':checked')) {
+						setCookie('user', user, 7);
+						window.location.href = 'myself.html';
+					} else {
+						window.location.href = 'myself.html';
+					}
+				} else {
+					alert('用户名或密码不正确');
+				}
+			})
+		}
+	});
+</script>
